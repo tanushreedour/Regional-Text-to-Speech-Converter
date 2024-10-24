@@ -84,7 +84,7 @@ def speak_out(input_text, voice, speed=1.0):
         speech_config.speech_synthesis_voice_name = voice
         
         # Use an audio file output
-        audio_output = speech_sdk.audio.AudioOutputConfig(filename="output_audio.wav")
+        # audio_output = speech_sdk.audio.AudioOutputConfig(filename="output_audio.wav")
         synthesizer = speech_sdk.SpeechSynthesizer(speech_config=speech_config, audio_config=audio_output)
         st.audio("output_audio.wav", sample_rate=sample_rate)
         
@@ -94,6 +94,10 @@ def speak_out(input_text, voice, speed=1.0):
         # Check the result
         if speech_synthesis_result.reason == speech_sdk.ResultReason.SynthesizingAudioCompleted:
             st.success("Speech synthesis completed!")
+            # Convert the synthesized audio result to a playable format
+            audio_stream = io.BytesIO(result.audio_data)
+            st.audio(audio_stream, format='audio/wav')
+            
         elif speech_synthesis_result.reason == speech_sdk.ResultReason.Canceled:
             cancellation_details = speech_synthesis_result.cancellation_details
             st.error(f"Error during speech synthesis: {cancellation_details.reason} - {cancellation_details.error_details}")
