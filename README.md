@@ -1,4 +1,4 @@
-# Text to Speech Conversion App
+# ✨Text to Speech Conversion App✨
 
 ### This project is a Text to Speech (TTS) conversion application built using Streamlit and Azure Cognitive Services. The application takes user input (text), converts it into speech using Azure's TTS service, and plays the audio directly in the browser.
 
@@ -110,8 +110,12 @@ To use Azure Cognitive Services for Text to Speech, you'll need:
 1. A Microsoft Azure account.
 2. Create a Speech resource in Azure and obtain the API key and region.
 3. Add the API key and region to the .env file as shown above.
-4. Dependencies
-5. The required dependencies are listed in requirements.txt. Some of the main libraries include:
+
+---
+
+## Dependencies
+
+The required dependencies are listed in requirements.txt. Some of the main libraries include:
 
 -azure-cognitiveservices-speech
 -streamlit
