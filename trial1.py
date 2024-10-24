@@ -82,12 +82,9 @@ def speak_out(input_text, voice, speed=1.0):
         # Set voice
         speech_config.speech_synthesis_voice_name = voice
         
-        # Create synthesizer
-        synthesizer = speech_sdk.SpeechSynthesizer(speech_config=speech_config)
-        
-        # Set the speech speed by creating a new synthesizer properties
-        # synthesis_properties = speech_sdk.SpeechSynthesisProperties()
-        # synthesis_properties.rate = speed
+        # Use an audio file output
+        audio_output = speech_sdk.AudioOutputConfig(filename="output_audio.wav")
+        synthesizer = speech_sdk.SpeechSynthesizer(speech_config=speech_config, audio_config=audio_output)
         
         # Synthesize speech
         speech_synthesis_result = synthesizer.speak_text_async(input_text).get()
