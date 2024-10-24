@@ -38,12 +38,12 @@ language_voices = {
     "Telugu (India)": ["te-IN-MohanNeural"],
     "Kannada (India)": ["kn-IN-GaganNeural"],
     "Gujarati (India)": ["gu-IN-DhwaniNeural"],
-    "Assamese (India)": ["as-IN-JintiNeural"],
+    "Assamese (India)": ["gu-IN-DhwaniNeural"],
     "Rajasthani (India, using Hindi TTS)": ["hi-IN-MadhurNeural"],  # Rajasthani mapped to Hindi
     "Malwi (India, using Hindi TTS)": ["hi-IN-MadhurNeural"],       # Malwi mapped to Hindi
     "Haryanvi (India, using Hindi TTS)": ["hi-IN-SwaraNeural"],      # Haryanvi mapped to Hindi
     "Bengali (India)": ["bn-IN-BashkarNeural"],
-    "Punjabi (India)": ["pa-IN-JagtarNeural"],
+    "Punjabi (India)": ["hi-IN-MadhurNeural"],
     "Marathi (India)": ["mr-IN-AarohiNeural"]
 }
 
