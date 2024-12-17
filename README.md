@@ -56,23 +56,23 @@ You can check my project here: https://multilingual-text-to-speech-converter.str
 
    -On MacOS:
    
-      ```bash
-      source venv/bin/activate
-      ```
-
+       ```bash
+       source venv/bin/activate
+       ```
+   
    -On Windows:
 
        ```bash
        venv/Scripts/activate
        ```
 
-4. Install dependencies:
+5. Install dependencies:
 
    ```bash
    pip install -r requirements.txt
    ```
 
-5. Run the application:
+6. Run the application:
 
    ```bash
    pip install -r requirements.txt
