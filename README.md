@@ -56,15 +56,15 @@ You can check my project here: https://multilingual-text-to-speech-converter.str
 
    -On MacOS:
    
-       ```bash
-       source venv/bin/activate
-       ```
+   ```bash
+    source venv/bin/activate
+   ```
    
    -On Windows:
 
-       ```bash
-       venv/Scripts/activate
-       ```
+    ```bash
+    venv/Scripts/activate
+    ```
 
 5. Install dependencies:
 
